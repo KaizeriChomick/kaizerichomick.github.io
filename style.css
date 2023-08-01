@@ -1,34 +1,44 @@
 body{
-    background-color: darkgray;
+    background: rgb(0,151,178);
+    background: linear-gradient(90deg, rgba(0,151,178,1) 28%, rgba(126,217,86,1) 65%);
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-}
-#Welcome{
-    background-color: white;
-    border: 3px solid black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-#Creators{
-    display: flex;
-    flex-direction: column;
-}
 
-#Lars, #Faustyna{
+}
+#k{
+    border-radius: 100%;
+}
+#iB{
     background-color: white;
-    border: 4px solid black;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
+    border-radius:100% ;
     margin:4px;
 }
-h1{
+#icon{
+
+    background: rgb(0,151,178);
+    background: linear-gradient(90deg, rgba(0,151,178,1) 28%, rgba(126,217,86,1) 65%);
+    border-radius: 100%;
+}
+#header{
+    align-items: center;
+    display:flex;
+    background:white;
+    border: 3px solid white;
+    border-radius:10px;
+    width:90vw;
+    overflow: hidden;
+    justify-content: space-between;
+}
+#Title{
+    font-size: x-large;
     text-decoration: underline;
 }
-h1,p{
-    margin: 3px;
+#nav,nav,ul,li{
+    display: flex;
+}
+
+
+a{
+    text-decoration: none;
+    margin: 4px;
 }
