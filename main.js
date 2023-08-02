@@ -1,10 +1,19 @@
+const Welcome = document.getElementById("Welcome")
+const setLang = document.getElementById("ChangeLang")
 
-const Welcome = document.getElementById("Welcome");
+const WelcomeTitle = document.getElementById("WelcomeTitle")
+const Greeting = document.getElementById("greeting")
 
-var language = require('./language.json')
-console.log(language)
-
-const Witam = document.createElement("h1")
-const text  = document.createTextNode(language.pl.hello)
-Witam.appendChild(text)
-Welcome.appendChild(Witam)
+function updateWelcomeMessage() {
+    const selectedLang = setLang.value;
+    var translation = language[selectedLang].hello;
+    WelcomeTitle.textContent = translation;
+     translation = language[selectedLang].greeting;
+    Greeting.textContent = translation;
+  }
+  
+  // Add an event listener to the select element
+  setLang.addEventListener("change", updateWelcomeMessage);
+  
+  // Initial call to set the default translation (English) on page load
+  updateWelcomeMessage();

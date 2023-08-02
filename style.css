@@ -3,7 +3,14 @@ body{
     background: linear-gradient(90deg, rgba(0,151,178,1) 28%, rgba(126,217,86,1) 65%);
     display: flex;
     align-items: center;
+    flex-direction: column;
 
+}
+select{
+    border-color: transparent;
+}
+select:active{
+    border-color: transparent;
 }
 #k{
     border-radius: 100%;
@@ -41,4 +48,9 @@ body{
 a{
     text-decoration: none;
     margin: 4px;
+}
+#Welcome{
+    background-color: white;
+    margin: 4px;
+    border-radius: 10px;
 }
